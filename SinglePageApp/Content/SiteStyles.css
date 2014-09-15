@@ -1,0 +1,357 @@
+﻿body {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    position: relative;
+   
+   
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input[type="text"],
+input[type="password"] {
+    max-width: 280px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+    .body-content {
+        padding: 0;
+    }
+  
+}
+
+
+.bordereddiv {
+    border-style:solid;
+    border-color:  #C7DE56;
+    border-radius: 10px;
+    padding:40px;
+    height: 500px;
+  
+}
+.imgbordereddiv {
+    border-style:solid;
+    border-color:  #C7DE56;
+    border-radius: 10px;
+    padding:40px;
+    height:auto;
+    width:auto;
+  
+}
+
+.adbordereddiv {
+    border-style:solid;
+    border-color:  #C7DE56;
+    border-radius: 10px;
+    padding:40px;
+    height:auto;
+    width:auto;
+   
+}
+
+.nobordereddiv {
+    border-style:none;
+    border-color:  #C7DE56;
+    border-radius: 10px;
+    padding:40px;
+    height:auto;
+    width:auto;
+   
+}
+
+.wizard {
+
+    border-style:solid;
+    border-color:  #C7DE56;
+    border-radius: 10px;
+    padding:20px;
+    height:400px;
+    width:auto;
+   
+
+}
+
+.bordereddiv {
+    border-style:solid;
+    border-color:  #C7DE56;
+    border-radius: 10px;
+    padding:10px;
+ }
+
+
+h6 {
+    font-size: 24px;
+    font-family: arial;
+    color:blue;
+
+}
+
+.smallmargin {
+    margin-top: -50px;
+    height: 40px;
+}
+
+.header {
+    background-color: red;
+    height: 20px;
+}
+.headerMargin {
+    margin-left: 40px;
+
+    
+}
+.handwritten {
+
+    font-family: Segoe Print;
+    color: #90A263;
+    font-size: 18px;
+}
+
+.smallLeftMargin {
+
+    margin-left: -300px;
+}
+
+.smallTexttMargin {
+
+    margin-left: 120px;
+}
+.picone {
+
+    height: 258px;
+    width:576px;
+}
+
+.picOKNO {
+
+    height: 50px;
+    width: 50px;
+}
+
+.stepimage {
+
+    height: 250px;
+    width:auto;
+}
+
+.pull-left
+{
+    float:left !important;
+ margin-right: 20px;
+
+}
+
+.figure {
+    color: darkgray;
+    font-family: Arial;
+    font-style:italic;
+
+
+}
+
+.left30margin {
+  
+    margin-left: 30px;
+
+}
+.navbar-inverse .navbar-brand { color:  #C7FF2B}
+.navbar-inverse .navbar-brand:hover { color: #90A263}
+/*.navbar-inverse { background-color: #3CAB68}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #456AFF}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #3CAB68}
+.dropdown-menu { background-color: #FFFFFF}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #428BCA}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #787878}
+
+.navbar-inverse .navbar-nav>li>a { color: #2E42F2}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
+.dropdown-menu>li>a { color: #333333}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}*/
+
+
+
+ul.nav-tabs {
+	width: 220px;
+	margin-top: 20px;
+	border-radius: 4px;
+	border: 1px solid #ddd;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+ul.nav-tabs li {
+	margin: 0;
+	border-top: 1px solid #ddd;
+}
+ul.nav-tabs li:first-child {
+	border-top: none;
+}
+ul.nav-tabs li a {
+	margin: 0;
+	padding: 8px 16px;
+	border-radius: 0;
+}
+ul.nav-tabs li.active a, ul.nav-tabs li.active a:hover {
+	color: white;
+	background: #0088cc;
+	border: 1px solid #0088cc;
+}
+ul.nav-tabs li:first-child a {
+	border-radius: 4px 4px 0 0;
+}
+ul.nav-tabs li:last-child a {
+	border-radius: 0 0 4px 4px;
+}
+ul.nav-tabs.affix {
+	top: 30px; /* Set the top position of pinned element */
+}
+
+
+.scrollspy-example {
+    height:250px;
+    overflow:auto;
+    position:relative;
+}
+
+.moveup {
+
+    margin-top: -300px;
+
+}
+
+
+.bluetext {
+    color:darkgreen;
+}
+.backcolor{
+
+    background-color:white;
+}
+
+.dt {
+
+width: 800px;
+}
+
+dl {
+
+width: 1660px;
+}
+
+.greenli{
+color: green;
+
+}
+
+.redli{
+color: red;
+
+}
+
+.wellmargin {
+
+    margin-left: 100px;
+}
+
+.menuspacing {
+
+    height: 125px;
+}
+
+.imagemargin {
+
+    margin-top: 10px;
+    margin-left: 60px;
+    border: 2px solid blue;
+    width: 650px; 
+    
+}
+
+.topmargin {
+
+    margin-top: 300px;
+}
+
+#active {
+color: yellow;
+}
+
+.mainform {
+    background-color: white;
+
+}
+
+.mainformselected {
+    background-color: lightgray;
+
+}
+
+.cartoonTextSmall {
+    height:auto;
+    width: auto;
+    font-size: 14px;
+   
+}
+
+
+.cartoonTextLarge {
+    height: auto;
+    width: auto;
+    font-size: 14px;
+ 
+}
+
+.more {
+    color: blue;
+    font-style: italic;
+
+}
+
+.hidden {
+
+    visibility:hidden;
+
+}
+.discribe {
+    font-size: 18px;
+    color: lightcoral;
+ 
+
+}
+
+#myScrollspy {
+ position:fixed;
+
+}
+
+.mainNavSeleted {
+
+    background-color: black;
+}
+
+.rateitList li {
+    font-size:18px;
+    padding: 10px;
+
+}
+.rateitalign {
+    margin-left: 20px;
+
+}
