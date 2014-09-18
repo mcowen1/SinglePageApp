@@ -31,13 +31,13 @@
                                     <a class="pull-left" href="#">
                                         <img class="media-object" src="Images/clock.png" alt="Clock">
                                     </a>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div>
                                         <h2>Multiview and Bootstrap Creates</h2>
                                         <h2>Responsive, Single Page Applications with no JavaScript</h2>
                                     </div>
                                     <div class="alert alert-success">
-                                        <h4>If you are like me, coding quickly and cheaply means the difference between working and not working, 
-                                                so Rapid Application Development is not a choice but an imperative in today's contract work environment.</h4>
+                                        <h4>If you are like me, coding quickly and cheaply means the difference between working and not working, </h4>
+
+                                           <h4>     so Rapid Application Development is not a choice but an imperative in today's contract work environment.</h4>
                                         <p>
                                             Customers, at the same time, expect that their applications will look and feel modern and appealing. Today this requires that your applications use 
                                             <a id="rd" data-toggle="popover" title="Responsive Page"
