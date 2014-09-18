@@ -22,10 +22,6 @@ public class DataAccess2
         return emp;
     }
 
-    //public Boolean ToggleActiveStatus(int ID)
-    //{
-    //    return true;
-    //}
 
     public static List<Departments> GetDepartments()
     {
