@@ -97,6 +97,7 @@
     <Content Include="Content\SiteStyles.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="favicon.ico" />
+    <Content Include="HowItsDone.aspx" />
     <Content Include="Images\clock.png" />
     <Content Include="Images\Edit.png" />
     <Content Include="Images\GridSample.png" />
@@ -133,6 +134,13 @@
     <Compile Include="Class\EmployeeData.cs" />
     <Compile Include="Class\Employees.cs" />
     <Compile Include="DataAccess\DataAccess.cs" />
+    <Compile Include="HowItsDone.aspx.cs">
+      <DependentUpon>HowItsDone.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HowItsDone.aspx.designer.cs">
+      <DependentUpon>HowItsDone.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SinglePageSample.aspx.cs">
       <DependentUpon>SinglePageSample.aspx</DependentUpon>

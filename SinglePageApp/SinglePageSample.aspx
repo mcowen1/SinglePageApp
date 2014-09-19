@@ -19,8 +19,8 @@
     <form id="form1" runat="server">
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
         <div class="container">
-
-
+            <asp:UpdatePanel ID="update1" runat="server" UpdateMode="Always">
+                <ContentTemplate>
             <asp:MultiView ID="MultiView1" runat="server">
                 <asp:View ID="mainView" runat="server">
 
@@ -52,7 +52,7 @@
                                 <h3>This simple example illustrates the use of the server side ASP Multiview Control and Bootstrap to accomplish our task.</h3>
                                 <br />
                                 <br />
-                                <asp:Button ID="btnHow" CssClass="btn  btn-success" runat="server" Text="See how it was built." OnClick="btnHow_Click" ToolTip="Go to build demonstration" />
+                                <button type="button" id="btnHow"  Title="Return to Grid" Class="btn btn-success" onclick="location.href = 'HowItsDone.aspx';" >See how it's done</button>
                                 <br />
                             </div>
                         </div>
@@ -141,111 +141,10 @@
                     </div>
 
                 </asp:View>
-
-
-                <asp:View runat="server" ID="wizard">
-                    <div>
-                        <h1>The Multiview </h1>
-                        <p class="lead">Explore the use of the Multiview to create Server Side Single Page Applications</p>
-                    </div>
-                    <div class='row'>
-                        <h2>Follow these steps</h2>
-                        <div>
-                            <ul id="Steps" class='nav nav-wizard'>
-                                <li id="nav1" class='active'><a href='#step1' data-toggle="tab">Step 1 - Add MultiView </a></li>
-                                <li id="nav2"><a href='#step2' data-toggle="tab">Step 2 - Add Views</a></li>
-                                <li id="nav3"><a href='#step3' data-toggle="tab">Step 3 - Add your Grid</a></li>
-                                <li id="nav4"><a href='#step4' data-toggle="tab">Step 4 - Add Edit page </a></li>
-                                <li id="nav5"><a href='#step5' data-toggle="tab">Step 5 - Switch between views</a></li>
-                            </ul>
-                            <br />
-                            <div id="myTabContent" class="tab-content">
-                                <div class="tab-pane fade  active in  adbordereddiv" id="step1">
-                                    <h3>Multiview</h3>
-                                    <p>
-                                        The key to a server side Single Page Application is the use of the Multiview.<br />
-                                        Multiview, if you have never used it, comes as a standard control in the Visual Studio toolkit.
-                                    </p>
-                                    <img src="Images/MultiView.png" alt=" " /><br />
-                                    <br />
-                                    <p>Start by dragging this control onto your page.</p>
-
-                                    <img src="Images/MultiviewDrag.png" />
-
-                                    <p>Next (Step 2) add server side Views inside the Multiview</p>
-
-                                </div>
-                                <div class="tab-pane fade adbordereddiv" id="step2">
-                                    <h3>Create views</h3>
-
-                                    <p>
-                                        As you will see, this is a very simple but effective control that allows you to make any <mark>one </mark>page simulate <mark>multiple</mark> pages. Each
-                                        View element within the Multiview looks like a separate  page.<br />
-
-                                        The illustration below provides 4 areas or views that will appear as separate  pages but you can switch between them without any postback
-                                        so we have essentially created a single page application that operates with server side controls and uses no JavaScript.
-                                    </p>
-
-                                    <img src="Images/MultiView2.png" />
-                                </div>
-                                <div class="tab-pane fade adbordereddiv" id="step3">
-                                    <h3>Step 3 Add View1 Content</h3>
-                                    <p>
-                                        In each view we can now add content.
-                                <br />
-                                        In the first view we place our asp Gridview Control and bind it to a data source.
-
-                                    </p>
-                                    <br />
-                                    <img src="Images/GridSample.png" />
-
-                                </div>
-                                <div class="tab-pane fade adbordereddiv" id="step4">
-                                    <h3>Step 4 Settings</h3>
-                                    <p>
-                                        In the second View we place our Add/Edit page. 
-                                    </p>
-                                    <img src="Images/Edit.png" />
-                                </div>
-                                <div class="tab-pane fade adbordereddiv" id="step5">
-                                    <h3>Step 5 - Switch between views</h3>
-                                    <p>
-                                        Switching between views is extremely  easy.<br />
-                                        In the code behind 
-                                    </p>
-                                    <pre><code>
-
-        // Set starting view in the page Load 
-        // In this case it will start in the first View ActiveViewIndex = 0
-        if (!IsPostBack)
-        {
-            MultiView1.ActiveViewIndex = 0;
-        }
-
-        // Chnage views on any event - in this case the "Add" button
-        // switches the view to View2 - Add/Edit Page
-        protected void btnAdd_Click(object sender, EventArgs e)
-        {
-            MultiView1.ActiveViewIndex = 1;
-
-        }
-                                       </code> </pre>
-                                    <br />
-                                    <p>So there you have it. A very simple and fast method of achieving a <mark>Single Page</mark> and<mark> Responsive</mark> Application with verty little time and very little code.</p>
-
-
-                                </div>
-                            </div>
-                            <br />
-                            <br />
-                            <button type="button" id="btnPrev" title="Move Next" class="btn btn-primary" disabled="disabled">< Previous</button>
-                            <button type="button" id="btnNext" title="Move Next" class="btn btn-primary">Next ></button>
-                            <asp:Button ID="btnBack" runat="server" Text="Return" ToolTip="Return to Grid" CssClass="btn btn-success" OnClick="btnBack_Click" />
-                        </div>
-                    </div>
-
-                </asp:View>
-            </asp:MultiView>
+                </asp:MultiView>
+                </ContentTemplate>
+                </asp:UpdatePanel>
+           
         </div>
         <script>
             $(function () {
