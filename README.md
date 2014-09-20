@@ -17,6 +17,6 @@ For those who have never used MultiView you will find it very simple to use and 
 
 This app, also, demonstrates the ease of use of the server side GridView which is easy to populate and manipulate and then the app goes on to display Add/Edit  pages within their own asp.view’s.
 
-NOTE: This application uses a simple List to populate the GridView. In production, of course you would switch this for a DataTable from your Database.  I have made no attempt to persist changes to the Records as my intention, here, is only to demo the ListView and th euse of server side controls.
+NOTE: This application uses a simple List to populate the GridView. In production, of course you would switch this for a DataTable from your Database.  I have made no attempt to persist changes to the Records as my intention, here, is only to demo the ListView and the use of server side controls.
 
 http://www.raddotnet.com/SinglePageSample.aspx
