@@ -1,0 +1,49 @@
+{
+    "people": [
+        {
+            "ID": 3,
+            "FirstName": "Mike",
+            "LastName": "Brown",
+            "DeptID": 3,
+            "Name": "Quality Control",
+            "eMail": "MikeBrown@thecompany.com",
+            "IsActive": true
+        },
+        {
+            "ID": 5,
+            "FirstName": "Sam",
+            "LastName": "Jones",
+            "DeptID": 5,
+            "Name": "Incoming Quality",
+            "eMail": "SamJones@thecompany.com",
+            "IsActive": true
+        },
+        {
+            "ID": 1,
+            "FirstName": "Joe",
+            "LastName": "Smith",
+            "DeptID": 1,
+            "Name": "Production",
+            "eMail": "JoeSmith@thecompany.com",
+            "IsActive": true
+        },
+        {
+            "ID": 2,
+            "FirstName": "Jane",
+            "LastName": "Sparrow",
+            "DeptID": 2,
+            "Name": "Human Resourses",
+            "eMail": "JaneSparrow@thecompany.com",
+            "IsActive": true
+        },
+        {
+            "ID": 4,
+            "FirstName": "Dianne",
+            "LastName": "Stall",
+            "DeptID": 3,
+            "Name": "Quality Control",
+            "eMail": "DianneStall@thecompany.com",
+            "IsActive": true
+        }
+    ]
+}

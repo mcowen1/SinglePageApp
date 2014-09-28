@@ -105,6 +105,7 @@
     <Content Include="Images\MultiView2.png" />
     <Content Include="Images\MultiviewDrag.png" />
     <Content Include="Images\Views.png" />
+    <None Include="Employees.json" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -120,6 +121,7 @@
     <Content Include="Scripts\knockout-3.2.0.js" />
     <Content Include="Scripts\SiteScripts.js" />
     <Content Include="SinglePageSample.aspx" />
+    <Content Include="Tutorial1.aspx" />
     <Content Include="Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -133,6 +135,7 @@
     <Compile Include="Class\Departments.cs" />
     <Compile Include="Class\EmployeeData.cs" />
     <Compile Include="Class\Employees.cs" />
+    <Compile Include="Class\EmplyeesRepository.cs" />
     <Compile Include="DataAccess\DataAccess.cs" />
     <Compile Include="HowItsDone.aspx.cs">
       <DependentUpon>HowItsDone.aspx</DependentUpon>
@@ -148,6 +151,13 @@
     </Compile>
     <Compile Include="SinglePageSample.aspx.designer.cs">
       <DependentUpon>SinglePageSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorial1.aspx.cs">
+      <DependentUpon>Tutorial1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutorial1.aspx.designer.cs">
+      <DependentUpon>Tutorial1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
